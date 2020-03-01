@@ -1,0 +1,33 @@
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+}
+
+.error {
+  position: fixed;
+  right: 5px;
+  bottom: 75px;
+}
+.error svg {
+  color: #9b1d21;
+  cursor: pointer;
+}
+
+.choose_print_layer_holder {
+  padding-bottom: 50px;
+}
+
+@media (max-width: 350px) {
+  .error {
+    right: 2px;
+    font-size: 14px;
+  }
+  .chooseFormat_Wrapper {
+    padding-bottom: 50px;
+  }
+}

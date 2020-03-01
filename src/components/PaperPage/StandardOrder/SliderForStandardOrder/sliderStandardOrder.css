@@ -1,0 +1,148 @@
+/* CSS VARIABLES */
+
+:root {
+  --red: #c22c2e;
+  --red_hover: #9b1d21;
+  --dark: #393939;
+  --light: #f3f3f3;
+  --blue: #116fa0;
+  --green: #79c640;
+  --white: #fff;
+}
+
+.standardOrder_dodajSlike {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  font-family: medium;
+  font-size: 24px;
+  color: var(--red);
+}
+
+.standardOrder_dodajSlike span,
+.standardOrder_dodajSlike span a {
+  text-decoration: underline;
+  margin: 0 5px;
+  color: var(--red);
+}
+
+@media (max-width: 1200px) {
+  .standardOrder_dodajSlike {
+    font-size: 18px;
+  }
+}
+
+.sliderForStandardOrder_item_wrapper {
+  background: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
+  border-radius: 3px;
+}
+
+.sliderForStandardOrder_item_holder {
+  width: 500px;
+  height: 480px;
+  overflow-y: scroll;
+}
+
+.sliderForStandardOrder_item_content {
+  height: 100px;
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-column-gap: 10px;
+}
+
+.sliderForStandardOrder_item_img_wrapper {
+  width: 100px;
+  height: 100px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+
+
+
+.sliderForStandardOrder_item_content_holder {
+  display: grid;
+  grid-template-rows: 50px 50px;
+  align-items: center;
+}
+
+.sliderForStandardOrder_item_content_holder_top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.deleteItemOfListFSO {
+  justify-self: end;
+  margin-right: 10px;
+}
+
+.deleteItemOfListFSO svg {
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.sliderForStandardOrder_item_content_holder_bottom {
+  font-size: 14px;
+}
+
+@media (max-width: 1000px) {
+  .sliderForStandardOrder_item_holder {
+    margin: 0 auto;
+    height: 380px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .sliderForStandardOrder_item_holder {
+    width: 400px;
+  }
+  .sliderForStandardOrder_item_wrapper {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 450px) {
+  .sliderForStandardOrder_item_holder {
+    width: 100%;
+  }
+  .standardOrder_dodajSlike {
+    display: block;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .deleteItemOfListFSO {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 350px) {
+  .sliderForStandardOrder_item_img_wrapper {
+    width: 80px;
+    height: 80px;
+  }
+  .sliderForStandardOrder_item_content {
+    height: 80px;
+    grid-template-columns: 80px 1fr;
+  }
+  .sliderForStandardOrder_item_content_holder {
+    grid-template-rows: 40px 40px;
+  }
+  .sliderForStandardOrder_item_holder {
+    height: 315px;
+  }
+}
+
+
+@media (max-width: 1030px) {
+  .discount p {
+    width: 70%;
+  }
+}

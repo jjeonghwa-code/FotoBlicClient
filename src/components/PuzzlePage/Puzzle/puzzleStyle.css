@@ -1,0 +1,255 @@
+.questionPopUpPuzzle {
+  position: absolute;
+  top: 170px;
+  right: 100px;
+  font-size: 30px;
+  color: var(--red_hover);
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .questionPopUpPuzzle {
+    top: 100px;
+    right: 20px;
+    font-size: 24px;
+  }
+  .puzzle_images_holder {
+    order: 2 !important;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 370px) {
+  .questionPopUpPuzzle {
+    top: 85px;
+    right: 5px;
+  }
+}
+
+.puzzle_images_holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.puzzle_images_box {
+  margin: 0 10px;
+}
+
+.puzzle_images_box h4 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-family: bold;
+}
+
+.puzzle_images_box img {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 500px) {
+  .puzzle_images_box h4 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  .puzzle_images_holder {
+    padding: 30px 0;
+  }
+}
+
+.puzzle_wrapper h2 {
+  text-align: center;
+  font-family: bold;
+  letter-spacing: 1.2px;
+  font-size: 30px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 450px) {
+  .puzzle_wrapper h2 .questionIconInComponent {
+    top: 2px !important;
+  }
+}
+
+@media (max-width: 370px) {
+  .puzzle_wrapper h2 {
+    font-size: 22px !important;
+  }
+  @media (max-width: 450px) {
+    .puzzle_wrapper h2 .questionIconInComponent {
+      top: -4px !important;
+      left: 8px !important;
+    }
+  }
+}
+
+.puzzle_content {
+  padding: 100px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.puzzle_content .puzzle_price_div h3 {
+  text-transform: uppercase;
+  font-family: bold;
+  letter-spacing: 1.2px;
+  font-size: 28px;
+  color: var(--red);
+}
+
+.puzzle_content .puzzle_price_div p {
+  font-size: 26px;
+  font-family: bold;
+  letter-spacing: 1.2px;
+}
+
+/* SLIDER FOR PUZZLE */
+
+.sliderForPuzzle {
+  width: 100%;
+  height: 500px;
+  background: #fff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  overflow-y: scroll;
+  padding: 20px;
+}
+
+.sliderForPuzzle_wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.sliderForPuzzle_holder_item {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 100px 1fr;
+}
+
+.sliderForPuzzle_img {
+  width: 100px !important;
+  height: 100px !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+
+.sliderForPuzzle_content {
+  display: grid;
+  grid-auto-rows: 50px 50px;
+  align-items: center;
+}
+
+.sliderForPuzzle_content_top {
+  display: flex;
+  align-items: center;
+}
+
+.sliderForPuzzle_content_top .mySelectIncrement {
+  margin-left: 10px;
+}
+
+.sliderForPuzzle_content_bottom > p {
+  font-size: 16px;
+}
+
+@media (max-width: 1000px) {
+  .puzzle_content {
+    grid-template-columns: 100%;
+  }
+  .puzzle_price_div {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .puzzle_wrapper h2 {
+    margin-top: 100px;
+  }
+  .puzzle_content {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 510px) {
+  .sliderForPuzzle_content_top .mySelectIncrement {
+    width: 82px;
+    grid-template-columns: 25px 30px 25px;
+  }
+}
+
+@media (max-width: 430px) {
+  .sliderForPuzzle {
+    padding: 10px 5px;
+    height: 400px;
+  }
+  .sliderForPuzzle_holder_item {
+    grid-template-columns: 80px 1fr;
+  }
+  .sliderForPuzzle_img {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  .sliderForPuzzle_content {
+    grid-auto-rows: 40px 40px;
+  }
+}
+
+@media (max-width: 380px) {
+  .sliderForPuzzle_content_top select {
+    width: 120px;
+    text-indent: 5px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .sliderForPuzzle_holder_item {
+    grid-gap: 5px;
+  }
+  .sliderForPuzzle {
+    height: 380px;
+  }
+  .sliderForPuzzle_content_top .mySelectIncrement {
+    margin-left: 5px;
+  }
+  .sliderForPuzzle_wrapper {
+    grid-gap: 10px;
+  }
+  .sliderForPuzzle_content_bottom > p {
+    font-size: 14px;
+  }
+  .sliderForPuzzle_content_top select {
+    width: 110px;
+  }
+}
+
+@media (max-width: 340px) {
+  .sliderForPuzzle {
+    height: 330px;
+  }
+  .sliderForPuzzle_holder_item {
+    grid-template-columns: 70px 1fr;
+  }
+  .sliderForPuzzle_img {
+    width: 70px !important;
+    height: 70px !important;
+  }
+  .sliderForPuzzle_content {
+    grid-auto-rows: 35px 35px;
+  }
+  .sliderForPuzzle_content_top select {
+    height: 35px;
+  }
+  .sliderForPuzzle_content_top .mySelectIncrement {
+    height: 35px;
+  }
+}

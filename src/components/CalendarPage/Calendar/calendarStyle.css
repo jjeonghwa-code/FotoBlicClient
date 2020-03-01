@@ -1,0 +1,268 @@
+.kalendarImg_wrapper {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.kalendarImg_wrapper p {
+  font-family: bold;
+  letter-spacing: 2px;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.kalendarImg {
+  width: 200px;
+}
+
+@media (max-width: 700px) {
+  .kalendarImg {
+    width: 150px;
+  }
+}
+
+.calendar_component h2 {
+  font-family: bold;
+  letter-spacing: 1.2px;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .calendar_component .container {
+    width: 100% !important;
+  }
+  .sliderForCalendar_content_top select {
+    width: 120px;
+  }
+  .calendar_component .naruci {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .calendar_component h2 {
+    font-size: 22px !important;
+  }
+  .calendar_component h2 .questionIconInComponent {
+    top: -4px !important;
+    left: 7px !important;
+  }
+}
+
+.calendar_component_content {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.calendar_component .ukupnaCena h3 {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-family: bold;
+  letter-spacing: 1.2px;
+  color: var(--red);
+}
+
+.calendar_component .ukupnaCena .price {
+  font-family: bold;
+  letter-spacing: 1.2px;
+  font-size: 26px;
+}
+
+.calendar_component .action_img {
+  width: 150px;
+  margin: 20px 0;
+}
+
+.calendar_component .naruci {
+  width: 70%;
+  font-size: 16px;
+}
+
+.sliderForCalendar {
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 450px;
+  overflow-y: scroll;
+  padding: 10px 20px;
+  padding-bottom: 0;
+}
+
+.sliderForCalendar_img {
+  width: 100px !important;
+  height: 100px !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+
+.sliderForCalendar_holder {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-gap: 10px;
+  margin-bottom: 10px;
+}
+
+.sliderForCalendar_content {
+  display: grid;
+  grid-template-rows: 50px 50px;
+  align-items: center;
+}
+
+.sliderForCalendar_content_top {
+  display: flex;
+  align-items: center;
+}
+
+.sliderForCalendar_content_top .mySelectIncrement {
+  margin-left: 10px;
+}
+
+.sliderForCalendar_content_bottom .pricePerPart {
+  font-size: 15px;
+}
+
+@media (max-width: 700px) {
+  .calendar_component h2 {
+    margin-top: 100px;
+  }
+  /* .sliderForCalendar_content_top .dizajnDugme {
+    animation: dizajnButtonAnimation 2s infinite;
+  } */
+}
+
+@media (max-width: 1000px) {
+  .calendar_component_content {
+    grid-template-columns: 100%;
+  }
+  .calendar_component_content_left {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .calendar_component .naruci {
+    width: 100%;
+    text-align: center;
+  }
+  .calendar_component_content_right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) { 
+  .kalendarImg_wrapper {
+    order: 2;
+  }  
+}
+
+@media (max-width: 550px) {
+  .sliderForCalendar_content_top .mySelectIncrement {
+    width: 80px;
+    grid-template-columns: 25px 30px 25px;
+  }
+}
+
+@media (max-width: 530px) {
+  .sliderForCalendar_img {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  .sliderForCalendar_content {
+    grid-template-rows: 40px 40px !important;
+  }
+  .sliderForCalendar_holder {
+    grid-template-columns: 80px 1fr;
+    grid-gap: 5px;
+  }
+  .sliderForCalendar {
+    height: 370px;
+  }
+}
+
+@media (max-width: 500px) {
+  .sliderForCalendar_content_top .mySelectIncrement {
+    margin-left: 5px;
+  }
+  .sliderForCalendar {
+    padding: 10px 5px;
+  }
+  .sliderForCalendar_content_top select {
+    width: 130px;
+  }
+}
+
+@media (max-width: 440px) {
+  .sliderForCalendar_content_top .dizajnDugme {
+    height: 35px;
+  }
+  .sliderForCalendar_content_top select {
+    height: 35px;
+    width: 105px;
+    font-size: 10px;
+  }
+  .sliderForCalendar_content_top .mySelectIncrement {
+    height: 35px;
+  }
+  .sliderForCalendar_content_bottom > p {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .sliderForCalendar_content_top .dizajnDugme {
+    width: 60px;
+    padding: 0 5px;
+    font-size: 13px;
+  } 
+  .sliderForCalendar_content_top .dizajnDugme svg {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 355px) {
+  .sliderForCalendar_content_top select {
+    width: 90px;
+    font-size: 9px;
+  }
+  .sliderForCalendar_img {
+    width: 70px !important;
+    height: 70px !important;
+  }
+  .sliderForCalendar_holder {
+    grid-template-columns: 70px 1fr;
+  }
+}
+
+@media (max-width: 330px) {
+  .sliderForCalendar_img {
+    width: 65px !important;
+    height: 65px !important;
+  }
+  .sliderForCalendar_holder {
+    grid-template-columns: 65px 1fr;
+    grid-gap: 2px;
+  }
+  .sliderForCalendar_content_top {
+    grid-template-rows: 32.5px 32.5px;
+  }
+  .sliderForCalendar_content_top select {
+    height: 32.5px;
+  }
+  .sliderForCalendar_content_top .dizajnDugme {
+    height: 32.5px;
+  }
+  .sliderForCalendar_content_top .mySelectIncrement {
+    height: 32.5px;
+  }
+}
+
+.calendarPage .myCustomOrder {
+  padding-bottom: 50px;
+}

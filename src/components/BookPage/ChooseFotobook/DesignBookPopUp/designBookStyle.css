@@ -1,0 +1,209 @@
+.dizajnDugme {
+  width: 80px;
+  height: 40px;
+  background: #116fa0;
+  color: #fff;
+  font-size: 16px;
+  font-family: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 5px;
+  cursor: pointer;
+  padding: 0 10px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dizajnDugme svg {
+  font-size: 15px;
+  margin-top: 2px;
+}
+
+.design_calendar_popup_wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 99999999999999;
+}
+
+.design_calendar_popup_wrapper .design_calendar_popup {
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  padding: 30px;
+  border-radius: 3px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 120px);
+  justify-content: center;
+  position: relative;
+  align-content: center;
+  margin-bottom: 30px;
+}
+
+.closeDesignCalendarButton {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--red);
+  font-size: 30px;
+}
+
+.design_calendar_popup_wrapper
+  .design_calendar_popup
+  .design_calendar_popup_box {
+  width: 120px;
+  height: 120px;
+  border-radius: 3px;
+  background-position: bottom !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  cursor: pointer;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.design_calendar_popup_wrapper
+  .design_calendar_popup
+  .design_calendar_popup_box:hover {
+  opacity: 0.4 !important;
+}
+
+@media (max-width: 700px) {
+  .design_calendar_popup_wrapper .design_calendar_popup {
+    grid-template-columns: repeat(4, 100px);
+    align-content: center;
+  }
+  .design_calendar_popup_wrapper
+    .design_calendar_popup
+    .design_calendar_popup_box {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 540px) {
+  .design_calendar_popup_wrapper .design_calendar_popup {
+    width: 100%;
+    height: 85%;
+    grid-template-columns: repeat(4, 80px) !important;
+    overflow-y: scroll;
+  }
+  .design_calendar_popup_wrapper
+    .design_calendar_popup
+    .design_calendar_popup_box {
+    width: 80px;
+    height: 80px;
+  }
+  .closeDesignCalendarButton {
+    top: 5px;
+    right: 5px;
+  }
+}
+
+@media (max-width: 375px) {
+  .design_calendar_popup_wrapper .design_calendar_popup {
+    height: 100%;
+    padding: 10px;
+    margin: 0;
+    grid-template-columns: repeat(3, 80px) !important;
+  }
+  .closeDesignCalendarButton {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 320px) {
+  .design_calendar_popup_wrapper .design_calendar_popup {
+    grid-template-columns: repeat(3, 60px) !important;
+  }
+  .design_calendar_popup_wrapper
+    .design_calendar_popup
+    .design_calendar_popup_box {
+    width: 60px !important;
+    height: 60px !important;
+  }
+}
+
+.design_calendar_popup_wrapper
+  .design_calendar_popup
+  .design_calendar_popup_box
+  img {
+  width: 100%;
+  height: 100%;
+}
+
+.frame2 {
+  background: url(../../../../assets/images/frameImage/frame2.jpg) !important;
+}
+
+.frame3 {
+  background: url(../../../../assets/images/frameImage/frame3.jpg) !important;
+}
+
+.frame4 {
+  background: url(../../../../assets/images/frameImage/frame4.jpg) !important;
+}
+
+.frame5 {
+  background: url(../../../../assets/images/frameImage/frame5.jpg) !important;
+}
+
+.frame6 {
+  background: url(../../../../assets/images/frameImage/frame6.jpg) !important;
+}
+
+.frame7 {
+  background: url(../../../../assets/images/frameImage/frame7.jpg) !important;
+}
+
+.frame8 {
+  background: url(../../../../assets/images/frameImage/frame8.jpg) !important;
+}
+
+.frame9 {
+  background: url(../../../../assets/images/frameImage/frame9.jpg) !important;
+}
+
+.frame10 {
+  background: url(../../../../assets/images/frameImage/frame10.jpg) !important;
+}
+
+.frame11 {
+  background: url(../../../../assets/images/frameImage/frame11.jpg) !important;
+}
+
+.frame12 {
+  background: url(../../../../assets/images/frameImage/frame12.jpg) !important;
+}
+
+.frame13 {
+  background: url(../../../../assets/images/frameImage/frame13.jpg) !important;
+}
+
+.frame14 {
+  background: url(../../../../assets/images/frameImage/frame14.jpg) !important;
+}
+
+.frame15 {
+  background: url(../../../../assets/images/frameImage/frame15.jpg) !important;
+}
+
+.frame16 {
+  background: url(../../../../assets/images/frameImage/frame16.jpg) !important;
+}
+
+.yourFrame {
+  text-align: center;
+}
+
+.yourFrame img {
+  width: 150px;
+  height: 150px;
+}

@@ -1,0 +1,191 @@
+.errorForm_wrapper {
+  position: fixed;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+.errorForm_holder {
+  width: 45%;
+  height: 75%;
+  overflow-y: scroll;
+  background: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 3px;
+  position: relative;
+}
+.errorForm_content {
+  margin: 13px 0;
+}
+.errorForm_content select {
+  width: 380px;
+  padding: 5px;
+  height: 35px;
+}
+.errorForm_content input {
+  width: 380px;
+  height: 35px;
+  padding: 5px;
+  font-size: 14px;
+}
+.errorForm_content textarea {
+  width: 380px;
+  height: 100px;
+  padding: 5px;
+  resize: none;
+  font-size: 14px;
+}
+.errorForm_content p {
+  margin: 5px 0;
+  font-size: 17px;
+  text-align: left;
+}
+.errorForm_holder img {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 25px;
+}
+.errorForm_btn {
+  width: 100px;
+  height: 35px;
+  background-color: #79c640;
+  border: 1px solid #79c640;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 1400px) {
+  .errorForm_holder {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .errorForm_holder {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .errorForm_holder {
+    width: 95%;
+  }
+  .errorForm_content input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .errorForm_content input {
+    width: 100%;
+  }
+  .errorForm_content select {
+    width: 100%;
+    padding-right: 50px;
+  }
+  .errorForm_content textarea {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .errorForm_content p {
+    font-size: 14px;
+  }
+  .errorForm_holder {
+    padding: 10px;
+  }
+  option {
+    font-size: 12px;
+  }
+}
+
+.custom_success_popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom_success_popup_holder {
+  width: 400px;
+  height: 200px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: #fff;
+  padding: 30px;
+}
+
+.custom_success_popup_holder p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.custom_success_popup_holder button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 40px;
+  color: #fff;
+  background: var(--blue);
+  text-decoration: none;
+  border: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .custom_success_popup_holder {
+    width: 90%;
+  }
+}
+
+.custom_err {
+  color: var(--red);
+  font-size: 14px !important;
+  font-weight: bold;
+  margin: 5px 0 0 0 !important;
+}
+
+@media (max-width: 700px) {
+  .errorForm_wrapper {
+    align-items: flex-end;
+    padding-bottom: 10%;
+  }
+  .errorForm_holder {
+    height: 80%;
+    margin-bottom: 15px;
+  }
+}
+
+.errorForm_holder h2 {
+  margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+  .errorForm_holder img {
+    right: 7px;
+  }
+}

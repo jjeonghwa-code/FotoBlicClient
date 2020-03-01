@@ -1,0 +1,175 @@
+.chooseFormat_Wrapper {
+  border-bottom: 1px solid #ccc;
+}
+
+.papper_upitnik {
+  top: 185px !important;
+}
+
+@media (max-width: 950px) {
+  .papper_upitnik {
+    top: 175px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .papper_upitnik {
+    top: 165px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .papper_upitnik {
+    top: 95px !important;
+  }
+  .myCustomOrder {
+    display: flex;
+    flex-direction: column;
+  }
+  .chooseFormat_Wrapper {
+    order: 2;
+  }
+  .btnForNext_wrapper {
+    order: 1;
+    padding: 0px;
+    padding: 20px 0;
+    margin: 0;
+  }
+}
+
+.chooseFormat {
+  display: grid;
+  grid-template-columns: 330px 330px;
+  justify-content: space-around;
+  padding: 80px 0;
+}
+
+.standardFormat,
+.combineFormat {
+  display: grid;
+  grid-template-rows: 70px 1fr;
+  grid-row-gap: 20px;
+}
+
+.standardFormat .chooseBox {
+  background: #116fa0;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.combineFormat .chooseBox {
+  background: #ffba34;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 700px) {
+  .combineh2 {
+    margin-top: 120px !important;
+  }
+}
+
+.chooseBox a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 22px;
+  font-family: bold;
+  letter-spacing: 1.2px;
+  position: relative;
+}
+
+.standardFormat,
+.combineFormat p {
+  text-align: center;
+  font-size: 14px;
+  font-family: bold;
+}
+
+.chooseBox svg {
+  margin-right: 10px;
+}
+
+@media (max-width: 1000px) {
+  .chooseFormat {
+    grid-template-columns: repeat(2, 300px);
+  }
+
+  .chooseBox a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .chooseFormat {
+    grid-template-columns: repeat(1, 400px);
+    grid-gap: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .chooseFormat {
+    grid-template-columns: repeat(1, 250px);
+    padding: 50px 20px;
+  }
+
+  .chooseBox a {
+    font-size: 16px;
+  }
+
+  .standardFormat,
+  .combineFormat {
+    grid-template-rows: 45px 1fr;
+  }
+}
+
+.faCheck_papper {
+  color: #79c640;
+  position: absolute;
+  right: 0;
+}
+
+.papper_btn_question {
+  position: absolute;
+  right: 0;
+  top: 42px;
+  font-size: 34px;
+  color: var(--red);
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .papper_btn_question {
+    top: 95px;
+    right: -5px;
+    font-size: 26px;
+  }
+}
+
+.ponuda {
+  width: 720px;
+  text-align: center;
+  padding: 7px 20px;
+  border-radius: 0 0 15px 15px;
+  font-size: 18px;
+  background: #9b1d21;
+  font-style: italic;
+  color: #fff;
+  font-family: bold;
+  margin: 0 auto;
+}
+
+@media (max-width: 850px) {
+  .ponuda {
+    width: 90%;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 650px) {
+  .ponuda {
+    width: 100%;
+  }
+}

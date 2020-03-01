@@ -1,0 +1,156 @@
+/* CSS VARIABLES */
+
+:root {
+  --red: #c22c2e;
+  --red_hover: #9b1d21;
+  --dark: #393939;
+  --light: #f3f3f3;
+  --blue: #116fa0;
+  --green: #79c640;
+  --white: #fff;
+}
+
+.standardOrder_component .orderPhotos .container {
+  max-width: 900px;
+}
+
+.orderPhotos {
+  padding-bottom: 100px;
+}
+
+.titleInComponent {
+  text-align: center;
+  font-size: 2rem;
+  font-family: bold;
+  letter-spacing: 1.2px;
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.questionIconInComponent {
+  color: var(--red);
+  font-size: 34px;
+  position: relative;
+  left: 30px;
+  cursor: pointer;
+}
+
+@media(max-width: 450px) {
+  .titleInComponent {
+    font-size: 24px !important;
+  }
+  .questionIconInComponent {
+    top: -3px !important;
+    left: 20px !important;
+    font-size: 28px !important;
+  }
+}
+
+.orderPhotos_holder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.selectDimension p {
+  font-size: 18px;
+  font-family: medium;
+  margin-bottom: 10px;
+}
+
+.totalPrice {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.totalPrice h3 {
+  text-transform: uppercase;
+  font-family: bold;
+  letter-spacing: 1.1px;
+  font-size: 2rem;
+  color: #c22c2d;
+}
+
+.totalPrice p {
+  font-family: bold;
+  font-size: 1.8rem;
+}
+
+.totalPrice p span {
+  margin-right: 5px;
+}
+
+.discount img {
+  width: 150px;
+}
+
+.discount p {
+  width: 70%;
+  margin-top: 20px;
+}
+
+.discount input[type="number"] {
+  border: 1px solid #ccc;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 16px;
+  color: var(--dark);
+}
+
+@media (max-width: 1000px) {
+  .orderPhotos {
+    padding-bottom: 50px;
+  }
+  .orderPhotos_holder {
+    grid-template-columns: 100%;
+    grid-gap: 3rem;
+    justify-items: center;
+  }
+  .orderPhotos_right {
+    width: 100%;
+  }
+
+  .orderPhotos_left {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-gap: 40px;
+  }
+  .selectDimension {
+    text-align: center;
+  }
+
+  .totalPrice {
+    margin: 0;
+  }
+
+  .discount {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+  }
+
+  .discount p {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .standardOrder_component .orderPhotos h2 {
+    margin-top: 100px;
+  }
+  .totalPrice {
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .discount img {
+    width: 120px;
+  }
+}

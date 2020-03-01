@@ -1,0 +1,393 @@
+/* CSS VARIABLES */
+
+:root {
+  --red: #c22c2e;
+  --red_hover: #9b1d21;
+  --dark: #393939;
+  --light: #f3f3f3;
+  --blue: #116fa0;
+  --green: #79c640;
+  --white: #fff;
+}
+
+.cup_page .uploadMyCheck button {
+  display: none;
+}
+
+.cup_wrapper {
+  padding-top: 50px;
+}
+
+.cup_component .cup_wrapper .container {
+  max-width: 900px;
+}
+
+.cup_holder_images {
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-column-gap: 100px;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.cup_holder_images_box {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 250px;
+  align-items: center;
+  justify-items: center;
+}
+
+.cup_holder_images_box h4 {
+  font-family: bold;
+  letter-spacing: 1.2px;
+  font-size: 30px;
+}
+
+.img_holder img {
+  width: 100%;
+}
+
+.selectCup_wrapper select {
+  margin-right: 10px;
+}
+
+/* SELECT TYPE CUP */
+
+.select_type_cup h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: bold;
+  letter-spacing: 1.2px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .select_type_cup h2 {
+    margin-top: 70px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .select_type_cup h2 {
+    font-size: 22px !important;
+  }
+  .select_type_cup h2 .questionIconInComponent {
+    left: 6px !important;
+    top: -3px !important;
+  }
+}
+
+.select_type_cup_holder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "l r"
+    "c c";
+  grid-row-gap: 100px;
+}
+
+.select_type_cup h5 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.select_type_cup .pricePerPart {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.selects_row {
+  display: flex;
+  align-items: center;
+}
+
+.totalPrice_div {
+  padding-top: 50px;
+}
+
+.totalPrice_div h6 {
+  text-transform: uppercase;
+  color: var(--red);
+  font-size: 26px;
+  font-family: bold;
+  letter-spacing: 1.7px;
+}
+
+.totalPrice_div .price {
+  font-size: 28px;
+  font-family: bold;
+}
+
+.select_type_cup_holder_left {
+  grid-column: l;
+}
+
+.select_type_cup_holder_right {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-column: r;
+  background: #fff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  padding: 0 20px;
+}
+
+.confirmButtons_wrapper {
+  grid-column: c;
+  padding-bottom: 100px;
+}
+
+.openFormButton_holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.openFormButton {
+  width: 230px;
+  height: 55px;
+  background: #79c640;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--white);
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+}
+
+.openFormButton span {
+  position: absolute;
+  left: 0;
+  width: 50px;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .confirmButtons_wrapper {
+    padding-bottom: 35px;
+  }
+  .openFormButton {
+    width: 250px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (max-width: 350px) {
+  .openFormButton {
+    font-size: 18px;
+    height: 50px;
+  }
+}
+
+.yourCupItem {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 10px;
+  width: 130px;
+  height: 130px;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+
+.yourCupItem svg {
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+@media (max-width: 1400px) {
+  .cup_holder_images {
+    grid-template-columns: repeat(3, 230px);
+    grid-column-gap: 50px;
+  }
+  .cup_holder_images_box {
+    grid-template-rows: auto 1fr;
+  }
+  .cup_holder_images_box h4 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 950px) {
+  .select_type_cup h2 {
+    margin-bottom: 20px;
+  }
+  .select_type_cup_holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .select_type_cup_holder_left {
+    width: 100%;
+    text-align: center;
+  }
+  .selects_row {
+    justify-content: center;
+    margin: 20px 0;
+  }
+  .totalPrice_div {
+    padding: 20px 0;
+  }
+  .select_type_cup_holder_right {
+    width: 100%;
+    padding: 50px 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .yourCupItem {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 900px) {
+  .cup_component .next_prev_buttons {
+    justify-content: center;
+  }
+  .cup_holder_images {
+    grid-template-columns: repeat(3, 200px);
+    grid-column-gap: 50px;
+  }
+}
+
+@media (max-width: 750px) {
+  .cup_holder_images {
+    grid-template-columns: repeat(3, 150px);
+    grid-column-gap: 50px;
+  }
+  .cup_holder_images_box h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .select_type_cup_holder_right {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .cup_component .next_prev_buttons {
+    grid-template-columns: 100%;
+  }
+  .cup_holder_images {
+    order: 2;
+  }
+  .btnForNext_wrapper {
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+@media (max-width: 650px) {
+  .yourCupItem {
+    width: 100px;
+    height: 100px;
+  }
+  .cup_holder_images {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .select_type_cup_holder_right {
+    padding: 20px 0;
+  }
+}
+@media (max-width: 400px) {
+  .select_type_cup_holder_right {
+    padding: 10px 0;
+  }
+  .yourCupItem {
+    width: 90px;
+    height: 90px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .selects_row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .selectCup_wrapper select {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  .yourCupItem {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  .cup_holder_images {
+    margin-top: 20px;
+    padding: 0 5px;
+    grid-gap: 5px;
+  }
+  .cup_holder_images_box h4 {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+}
+
+.textareaForCup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.textareaForCup .textareaForCup_text {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.textareaForCup textarea {
+  border: none;
+  outline: none;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  resize: none;
+  width: 500px;
+  height: 200px;
+  background: #fff;
+  border-radius: 3px;
+  padding: 10px;
+  color: var(--dark);
+  font-size: 14px;
+}
+
+@media (max-width: 650px) {
+  .textareaForCup .textareaForCup_text {
+    font-size: 14px;
+  }
+  .textareaForCup textarea {
+    width: 80%;
+    height: 150px;
+  }
+}

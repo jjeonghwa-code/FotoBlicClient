@@ -1,0 +1,379 @@
+/* CSS VARIABLES */
+
+:root {
+  --red: #c22c2e;
+  --red_hover: #9b1d21;
+  --dark: #393939;
+  --light: #f3f3f3;
+  --blue: #116fa0;
+  --green: #79c640;
+  --white: #fff;
+}
+
+/* Image Section */
+
+.image_section_home {
+  background: url(../../assets/images/home.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text_wrap {
+  width: 350px;
+}
+
+.text_wrap img {
+  width: 60px;
+}
+
+.text_wrap .airImg {
+  margin: 10px 0;
+}
+
+.text_wrap h4 {
+  color: var(--dark);
+  font-size: 34px;
+  font-family: bold;
+  letter-spacing: 1.2px;
+  margin-bottom: 10px;
+}
+
+.text_wrap p {
+  font-size: 16px;
+  font-family: medium;
+  letter-spacing: 1.1px;
+}
+
+.text_wrap span {
+  color: var(--dark);
+  font-size: 18px;
+  font-family: bold;
+  letter-spacing: 1.1px;
+}
+
+.text_wrap svg {
+  font-size: 3rem;
+  color: var(--red);
+  margin-top: 40px;
+  display: none;
+}
+
+.scrollAnimation_text {
+  display: none;
+}
+
+/* Steps section */
+
+.steps {
+  padding: 100px 0;
+  border-bottom: 1px solid #d3d3d5;
+}
+
+.steps_holder {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 5rem;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #1d69a3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.circle p {
+  font-size: 30px !important;
+  text-align: center;
+  font-family: bold;
+  color: var(--light);
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  top: 15%;
+  bottom: 15%;
+  background: #2c81c2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.step h6 {
+  color: var(--dark);
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: bold;
+  letter-spacing: 1.1px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.step p {
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Choose Pring Layer Section */
+
+.choose_print_layer {
+  padding: 50px 0;
+}
+
+.choose_print_layer_holder h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-family: bold;
+  letter-spacing: 1.2px;
+}
+
+.choose_print_layer_buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  grid-gap: 30px;
+  grid-template-rows: 80px 80px;
+  justify-content: center;
+}
+
+.layar_btn {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
+}
+
+.layar_btn span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.layar_btn a {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: bold;
+  letter-spacing: 1.2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+
+.layar_btn:nth-child(1) span {
+  background: #50ace1;
+}
+
+.layar_btn:nth-child(2) span {
+  background: #dca439;
+}
+
+.layar_btn:nth-child(3) span {
+  background: #d27bf6;
+}
+
+.layar_btn:nth-child(4) span {
+  background: #4277e5;
+}
+
+.layar_btn:nth-child(5) span {
+  background: #dc6b43;
+}
+
+.layar_btn:nth-child(6) span {
+  background: #9c56e3;
+}
+
+.choose_print_layer_buttons .layar_btn:nth-child(1) {
+  background: #2587c0;
+}
+
+.choose_print_layer_buttons .layar_btn:nth-child(2) {
+  background: #c08b25;
+}
+
+.choose_print_layer_buttons .layar_btn:nth-child(3) {
+  background: #c259ee;
+}
+
+.choose_print_layer_buttons .layar_btn:nth-child(4) {
+  background: #2558c0;
+}
+
+.choose_print_layer_buttons .layar_btn:nth-child(5) {
+  background: #c04d25;
+}
+
+.choose_print_layer_buttons .layar_btn:nth-child(6) {
+  background: #7225c0;
+}
+
+/* Home Media Screen */
+
+@media (max-width: 1400px) {
+  .choose_print_layer_buttons {
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 70px 70px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .choose_print_layer_buttons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .layar_btn a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  .choose_print_layer_buttons {
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: 70px 70px 70px;
+  }
+  .layar_btn a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  /* Image Section */
+  .image_section_home {
+    background: none;
+    min-height: auto;
+    padding-top: 60px;
+    height: 100vh;
+  }
+
+  .text_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+  }
+
+  .medalImg {
+    margin-bottom: 10px;
+  }
+
+  .text_wrap h4 {
+    display: none;
+  }
+
+  .text_wrap p {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .text_wrap svg {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .scrollAnimation_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: bold;
+    letter-spacing: 1.2px;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  /* Steps Section */
+
+  .steps {
+    height: 100vh;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .steps_holder {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 150px);
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .circle {
+    width: 50px;
+    height: 50px;
+  }
+
+  .circle p {
+    font-size: 20px !important;
+  }
+
+  /* Choose Pring Layer Section */
+
+  .choose_print_layer {
+    padding: 50px 0;
+  }
+
+  .choose_print_layer_buttons {
+    grid-template-columns: repeat(1, 270px);
+    grid-template-rows: repeat(6, 60px);
+  }
+
+  .choose_print_layer_holder h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .text_wrap {
+    width: 70%;
+  }
+
+  .text_wrap img {
+    width: 50px;
+  }
+
+  .text_wrap span {
+    font-size: 16px;
+  }
+
+  .text_wrap p {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .text_wrap svg {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 320px) {
+  .text_wrap p {
+    margin: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    background: url(../../assets/images/mobileBg.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+  }
+}
+
